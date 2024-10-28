@@ -1,0 +1,88 @@
+@import "./partials/reset";
+@import "./partials/variables";
+@import "./partials/mixins";
+
+body {
+  font-family: $font-family-text;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $background-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+}
+
+#root {
+  position: relative;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  &__vector {
+    position: absolute;
+    width: 72.4vw;
+    top: -7.8vw;
+    right: -22.4vw;
+  }
+  &__img {
+    position: absolute;
+    width: 39vw;
+    top: 0;
+    right: 0;
+  }
+}
+
+#main {
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  max-width: 1025px;
+  margin-top: 23vw;
+  padding: 0px 5vw;
+  gap: 10vw;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  #main {
+    margin-top: 10vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  #main {
+    margin-top: 120px;
+    padding: 0px 100px;
+    gap: 90px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .background {
+    &__vector {
+      width: 1039px;
+      top: -112px;
+      right: -322px;
+    }
+    &__img {
+      width: 560px;
+    }
+  }
+}
