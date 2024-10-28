@@ -1,12 +1,17 @@
 import React from "react";
-import "./AboutMe.scss";
+import styles from "./AboutMe.module.scss";
 
 const AboutMe: React.FC = () => {
   return (
     <section className="about-me" id="about">
-      <div className="container">
-        <img src={`${process.env.PUBLIC_URL}/assets/images/headshot.png`} alt="Ayaka Kojima" className="img" />
-        <div>
+      <div className={styles.container}>
+        <img src={`${process.env.PUBLIC_URL}/assets/images/vector02.svg`} className={styles.vector} />
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/images/headshot.png`}
+          alt="Ayaka Kojima"
+          className={styles.headshot}
+        />
+        <div className={styles.content}>
           <h2>About Me</h2>
           <p>
             I am dedicated to enhancing user experiences and fostering collaborative development environments. I have
