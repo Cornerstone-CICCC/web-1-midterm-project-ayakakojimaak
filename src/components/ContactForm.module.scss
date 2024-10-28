@@ -1,0 +1,14 @@
+.contact {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    input,
+    textarea {
+      padding: 10px;
+      font-size: 1.2rem;
+      border: 1px solid #ccc;
+    }
+  }
+}

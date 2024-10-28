@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProjectSection.scss";
+import styles from "./ProjectSection.module.scss";
 
 const projects = [
   { id: 1, title: "Sample Project 1", tech: "React, TypeScript, HTML, CSS" },
@@ -10,11 +10,11 @@ const projects = [
 const ProjectSection: React.FC = () => {
   return (
     <section className="projects" id="projects">
-      <div className="container">
+      <div className={styles.container}>
         <h2>Projects</h2>
-        <div className="projects__list">
+        <div className={styles.list}>
           {projects.map((project) => (
-            <div className="projects__item" key={project.id}>
+            <div className={styles.item} key={project.id}>
               <h3>{project.title}</h3>
               <p>{project.tech}</p>
             </div>
