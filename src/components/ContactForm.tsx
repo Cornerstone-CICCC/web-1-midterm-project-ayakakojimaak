@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./ContactForm.module.scss";
 
+
 const ContactForm: React.FC = () => {
   return (
     <section className="contact" id="contact">
       <div className={styles.container}>
+
         <h2>Contact Me</h2>
         <form className="contact__form">
           <input type="text" name="name" placeholder="Name" required />
