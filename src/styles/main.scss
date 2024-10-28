@@ -57,6 +57,7 @@ p {
   align-items: center;
   max-width: 1025px;
   margin-top: 23vw;
+  margin-bottom: 10vw;
   padding: 0px 5vw;
   gap: 10vw;
 }
@@ -75,7 +76,6 @@ section {
   h3 {
     font-size: 3.8vw;
   }
-
 }
 
 @media screen and (min-width: 600px) {
@@ -90,7 +90,6 @@ section {
     h3 {
       font-size: 2.6vw;
     }
-
   }
 }
 
