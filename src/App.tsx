@@ -11,9 +11,13 @@ import "./styles/main.scss";
 const App: React.FC = () => {
   return (
     <ThemeProvider>
-      <div className="background">
-        <img src={`${process.env.PUBLIC_URL}/assets/images/vector01.svg`} className="background__vector" />
-        <img src={`${process.env.PUBLIC_URL}/assets/images/atf.png`} alt="Ayaka Kojima" className="background__img" />
+      <div className="background-header">
+        <img src={`${process.env.PUBLIC_URL}/assets/images/vector01.svg`} className="background-header__vector" />
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/images/atf.png`}
+          alt="Ayaka Kojima"
+          className="background-header__img"
+        />
       </div>
       <div id="main">
         <Header />
@@ -22,6 +26,9 @@ const App: React.FC = () => {
         <AboutMe />
         <ProjectSection />
         <ContactForm />
+      </div>
+      <div className="background-footer">
+        <img src={`${process.env.PUBLIC_URL}/assets/images/vector03.svg`} className="background-footer__vector" />
       </div>
     </ThemeProvider>
   );

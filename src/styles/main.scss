@@ -31,10 +31,11 @@ p {
   overflow: hidden;
 }
 
-.background {
+.background-header {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: -1;
   &__vector {
     position: absolute;
     width: 72.4vw;
@@ -44,6 +45,18 @@ p {
   &__img {
     position: absolute;
     width: 39vw;
+    top: 0;
+    right: 0;
+  }
+}
+.background-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  &__vector {
+    width: 100%;
     top: 0;
     right: 0;
   }
