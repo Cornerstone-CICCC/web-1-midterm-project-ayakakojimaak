@@ -1,5 +1,5 @@
-@import "../styles/partials/variables";
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair:opsz,wght@5..1200,800&family=Raleway:wght@500&display=swap");
 .container {
   width: 100%;
   display: flex;
@@ -14,14 +14,14 @@
   align-items: flex-end;
   width: 65vw;
   gap: 1.6vw;
-
-  input,
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
 }
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
 .btn {
   display: block;
   font-weight: 600;
@@ -30,7 +30,7 @@
   font-size: 12px;
   padding: 8px 0;
   border-radius: 5px;
-  border: 1px solid $text-color;
+  border: 1px solid #25282b;
 }
 
 @media screen and (min-width: 1025px) {
@@ -42,6 +42,6 @@
     font-size: 14px;
     padding: 10px 0;
     border-radius: 6px;
-    border: 1.6px solid $text-color;
+    border: 1.6px solid #25282b;
   }
-}
+}/*# sourceMappingURL=ContactForm.module.css.map */
